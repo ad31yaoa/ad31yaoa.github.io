@@ -1,0 +1,65 @@
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #333;
+}
+
+.topmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+
+
+.Epretty {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #d64a6e;
+}
+
+.newone .nowone {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nowone a {
+  color: #333;
+  font-weight: 600;
+  padding: 6px 10px;
+}
+
+.nowone a:hover {
+  background: rgba(255, 122, 162, 0.2); /*the color gradient*/
+}
+
+
+/* 4 the mobile ver*/
+.menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: v#d64a6e;
+}
+
+@media (max-width: 750px) {
+  .newone .nowone {
+    display: none;
+    flex-direction: column;
+    background: #fff7e6;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .newone.show .nowone {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+}
