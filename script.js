@@ -1,0 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const menuBtn = document.querySelector(".menu");
+  const nav = document.querySelector(".newone");
+
+  menuBtn.addEventListener("click", function() {
+    nav.classList.toggle("show");
+  });
+});
